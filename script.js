@@ -8,16 +8,26 @@
 		open: true
 	};
 
-	for (let i = 0; i < 5; i++) {
-		let a = prompt("Какой тип товаров будем продавать?", "");
+	// for (let i = 0; i < 5; i++) {
+	// 	let a = prompt("Какой тип товаров будем продавать?", "");
+	// 		if ((typeof(a)) === "string" && (a !== null && a != "" && a.length < 50 ) ) {
+	// 			mainList.shopGoods.push(a);
+	// 			console.log("Всё верно");
+	// 	} else {
+	// 		i--
+	// 			console.log("Не верно!")
+	// 	}
+	// }
+
+	do {
+			let a = prompt("Какой тип товаров будем продавать?", "");
 			if ((typeof(a)) === "string" && (a !== null && a != "" && a.length < 50 ) ) {
 				mainList.shopGoods.push(a);
 				console.log("Всё верно");
 		} else {
-			i--
 				console.log("Не верно!")
 		}
-	}
+	} while (mainList.shopGoods.length < 5);
 
 	// for (let i = 0; i < 5; i++){
 	// 	let a = prompt("Какой тип товаров будем продавать?", "");
